@@ -1,245 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="google-site-verification" content="uUif7ba_5_elQPN-M9LfTbMDnpingPomGD_nHTRzVVg" />
-<title>MY PROFILE</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarthak Nimbalkar | Data Science • ML • IoT • Robotics</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Sarthak Nimbalkar | Data Science • ML • IoT • Robotics" />
+    <meta name="description" content="Portfolio of Sarthak Nimbalkar — Mechanical Engineering student exploring Data Science, Machine Learning, IoT and Robotics." />
+    <meta name="keywords" content="Sarthak Nimbalkar, Mechanical Engineering, Data Science, Machine Learning, IoT, Robotics, ESP32, Python, Scikit-learn" />
+    <meta name="author" content="Sarthak Nimbalkar" />
+    <meta name="theme-color" content="#050505" />
 
-<style>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sarthak Nimbalkar | Data Science • ML • IoT • Robotics" />
+    <meta property="og:description" content="Portfolio of Sarthak Nimbalkar — Mechanical Engineering student exploring Data Science, Machine Learning, IoT and Robotics." />
+    <meta property="og:site_name" content="Sarthak Nimbalkar Portfolio" />
 
-/* BODY */
-body {
-    margin: 0;
-    font-family: Arial;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-}
-/* Background Animation */
-@keyframes gradientBG {
-    0% {background-position: left;}
-    100% {background-position: right;}
-}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sarthak Nimbalkar | Data Science • ML • IoT • Robotics" />
+    <meta name="twitter:description" content="Portfolio of Sarthak Nimbalkar — Mechanical Engineering student exploring Data Science, Machine Learning, IoT and Robotics." />
 
-
-/* TITLE */
-.title {
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
-    animation: glow 4s infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 10px #fff; }
-    to { text-shadow: 0 0 25px cyan; }
-}
-
-/* PROFILE BOX */
-.profile {
-    text-align: center;
-    padding: 20px;
-}
-
-.profile img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid cyan;
-    box-shadow: 0 0 20px cyan;
-    animation: zoom 3s infinite alternate;
-}
-
-@keyframes zoom {
-    from { transform: scale(1); }
-    to { transform: scale(1.1); }
-}
-
-/* GRID LAYOUT */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-/* CARDS (GLASS EFFECT) */
-.card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 15px;
-    transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    background: rgba(255,255,255,0.2);
-}
-
-/* SKILLS */
-.bar {
-    background: #444;
-    border-radius: 5px;
-}
-
-.fill {
-    height: 10px;
-    background: cyan;
-    border-radius: 5px;
-}
-
-/* BUTTON */
-.btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background: cyan;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-/* MESSAGE */
-#msg {
-    text-align: center;
-    display: none;
-    color: lightgreen;
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- TITLE -->
-<div class="title">MY PROFILE</div>
-
-<!-- PROFILE -->
-<div class="profile">
-    <img src="image.jpg">
-    <h2>SARTHAK NIMBALKAR</h2>
-    <p>Engineering Student | Web Developer</p>
-</div>
-
-<!-- GRID -->
-<div class="grid">
-
-    <div class="card">
-        <h3>About Me</h3>
-        <p>I am passionate about : </p> 
-        <p>✔ Coding</p>
-        <p>✔ Cyber Security</p>
-        <p>✔ Exploring Technology</p>
-        <p> Creating Projects Related to Various fields</p> 
-    </div>
-
-    <div class="card">
-        <h3>Education</h3>
-        <p> FY Engineering Student</p>
-        <p>College: SANJIVANI COLLEGE OF ENGINEERING</p>
-        <p> Department : MECHANICAL ENGINEERING</p>
-    </div>
-
-    <div class="card">
-        <h3>Skills</h3>
-        HTML
-        <div class="bar"><div class="fill" style="width:90%"></div></div>
-        <hr>
-
-        CSS
-        <div class="bar"><div class="fill" style="width:80%"></div></div>
-     <hr>
-        JavaScript
-        <div class="bar"><div class="fill" style="width:70%"></div></div>
-        <hr>
-       PYTHON
-         <div class="bar"><div class="fill" style="width:50%"></div></div>
-    </div>
-
-    <div class="card">
-        <h3>Projects</h3>
-        <p>✔ Arduino Projects</p>
-        <p>✔ Portfolio Website</p>
-        <p>✔ Thermal Camera Rescue Robot </p>
-        
-    </div>
-
-    <div class="card">
-        <h3>✔ Hobbies</h3>
-        <p>✔ Coding </p>
-        <p>✔ Gaming</p> 
-        <p>✔ Playing</p>
-    </div>
-    <div class="card">
-<h3>Certifications</h3>
-<p>✔ Web Development - Coursera</p>
-<p>✔ Python - Udemy</p>
-</div>
-
-<div class="card">
-<h3>Achievements</h3>
-<p>✔ Participated in Hackathons</p>
-<p>✔ Coding Competitions</p>
-</div>
-
-<div class="card">
-<h3>Strengths</h3>
-<p>✔ Problem Solving</p>
-<p>✔ Teamwork</p>
-</div>
-
-<div class="card">
-<h3>Languages</h3>
-<p>✔ English</p>
-<p>✔ German</p>
-<p>✔ Hindi</p> 
-<P>✔ Marathi</P> 
-</div>
-
-<div class="card">
-<h3>Tools</h3>
-<p>✔ VS Code</p>
-<p>✔ Git-hub</p>
-<p>✔ Arduino-IDE</p>
-</div>
-
-<div class="card">
-<h3>Statistics</h3>
-<p>✔ Projects: 10+</p>
-<p>✔ Skills Learned: 8+</p>
-</div>
-
-<div class="card">
-<h3>Quote</h3>
-<p>"Code. Learn. Build. Repeat."</p>
-</div>
-
-<div class="card">
-<h3>Social Links</h3>
-<p><a href="#" style="color:cyan;">LinkedIn</a></p>
-<p><a href="#" style="color:cyan;">GitHub</a></p>
-</div>
-
-    <div class="card">
-        <h3>Contact : 7249649039</h3>
-       <button><a href = "nimbalkarsarthak18@gmail.com">nimbalkarsarthak18@gmail.com</a></button>
-        <p> linkedin : https://www.linkedin.com/in/sarthak - nimbalkar</p>
-    </div>
-
-</div>
-
-<!-- BUTTON -->
-<button class="btn" onclick="showMessage()">Click Me</button>
-<p id="msg">🔥 Thanks for visiting my profile!</p>
-
-<script>
-function showMessage() {
-    document.getElementById("msg").style.display = "block";
-}
-</script>
-
-</body>
+    <!-- Google Fonts: Syne (Ultra-futuristic display) & JetBrains Mono (Technical HUD) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-BLZy8Aox.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bj50-dy8.css">
+  </head>
+  <body class="bg-[#050505] text-[#f5f5f5] antialiased selection:bg-[#e50914] selection:text-white">
+    <div id="root"></div>
+  </body>
 </html>
